@@ -1,0 +1,58 @@
+{
+  "system": "Sistema de Ventas Modular",
+  "version": "1.0.0",
+  "featureModel": {
+    "mandatory": [
+      "auth",
+      "products",
+      "sales",
+      "customers"
+    ],
+    "optional": [
+      "discounts",
+      "reports",
+      "export_reports"
+    ],
+    "dependencies": {
+      "export_reports": ["reports"]
+    }
+  },
+  "variants": {
+    "basic": {
+      "id": "basic",
+      "name": "Variante Básica",
+      "description": "Edición estándar para pequeños comercios con operaciones esenciales de ventas y catálogo.",
+      "features": {
+        "auth": true,
+        "products": true,
+        "sales": true,
+        "customers": true,
+        "discounts": false,
+        "reports": false,
+        "export_reports": false
+      },
+      "limits": {
+        "maxProducts": 50,
+        "allowDiscounts": false
+      }
+    },
+    "premium": {
+      "id": "premium",
+      "name": "Variante Premium",
+      "description": "Edición empresarial completa con analítica de ventas, descuentos dinámicos y exportación de métricas.",
+      "features": {
+        "auth": true,
+        "products": true,
+        "sales": true,
+        "customers": true,
+        "discounts": true,
+        "reports": true,
+        "export_reports": true
+      },
+      "limits": {
+        "maxProducts": 5000,
+        "allowDiscounts": true
+      }
+    }
+  }
+}

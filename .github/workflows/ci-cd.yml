@@ -1,0 +1,95 @@
+name: Pipeline CI/CD - Sistema de Ventas con Variabilidad
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  workflow_dispatch:
+
+# Permisos requeridos para desplegar automáticamente en GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # ==========================================
+  # FASE 3: INTEGRACIÓN CONTINUA (CI)
+  # ==========================================
+  build-and-test:
+    name: 🚀 CI: Compilación, Validación y Pruebas
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Descarga del código fuente (Checkout)
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar entorno de Node.js (v20)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 3. Instalación limpia de dependencias
+        run: npm ci
+
+      - name: 4. Validación automatizada del Modelo de Características
+        run: npm run validate:config
+
+      - name: 5. Ejecución de pruebas unitarias automatizadas (Vitest)
+        run: npm test
+
+      - name: 6. Construcción y empaquetado del software (Build de variantes)
+        run: npm run build
+
+      - name: 7. Generar y registrar artefacto descargable (Upload Artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: sales-system-production-build
+          path: dist/
+          retention-days: 14
+
+  # ==========================================
+  # FASE 4: DESPLIEGUE CONTINUO (CD)
+  # Condicionado estrictamente al éxito de CI
+  # ==========================================
+  deploy-production:
+    name: 🌐 CD: Despliegue Continuo a Producción
+    needs: build-and-test
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: 1. Descarga del código fuente
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 3. Instalar dependencias y compilar distribución
+        run: |
+          npm ci
+          npm run build
+
+      - name: 4. Configurar GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: 5. Subir artefacto para GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'dist'
+
+      - name: 6. Desplegar a GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
