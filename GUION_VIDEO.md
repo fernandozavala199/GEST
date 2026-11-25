@@ -6,17 +6,17 @@
 
 ---
 
-## 👥 Resumen de Asignación de Roles (4 a 5 Integrantes)
+## 👥 Resumen de Asignación de Roles del Equipo
 
-| Parte | Minutos | Tema Principal | Responsable Sugerido |
+| Parte | Minutos | Tema Principal | Responsable |
 | :--- | :---: | :--- | :--- |
-| **Parte 1** | 00:00 - 01:00 (1 min) | Presentación del Grupo y Descripción del Sistema | **Integrante 1 (Coordinador)** |
-| **Parte 2** | 01:00 - 03:00 (2 min) | Repositorio, Estrategia Gitflow, Ramas y Releases | **Integrante 2** |
-| **Parte 3** | 03:00 - 06:00 (3 min) | Flujo de Integración Continua (CI) y Artefactos | **Integrante 3** |
-| **Parte 4** | 06:00 - 08:00 (2 min) | Demostración de Prueba Fallida y Corrección en CI | **Integrante 4** |
-| **Parte 5** | 08:00 - 10:00 (2 min) | Despliegue Continuo (CD) Condicionado a Pruebas | **Integrante 5** *(o Integrante 1)* |
-| **Parte 6** | 10:00 - 13:00 (3 min) | Gestión de Variabilidad, Modelo de Características y Single Codebase | **Integrante 2 y 3** |
-| **Parte 7** | 13:00 - 14:00 (1 min) | Conclusiones Técnicas y Cierre | **Todos los Integrantes** |
+| **Parte 1** | 00:00 - 01:00 (1 min) | Presentación del Grupo y Descripción del Sistema | **Fernando Zavala** |
+| **Parte 2** | 01:00 - 03:00 (2 min) | Repositorio, Estrategia Gitflow, Ramas y Releases | **Andres Suarez** |
+| **Parte 3** | 03:00 - 06:00 (3 min) | Flujo de Integración Continua (CI) y Artefactos | **Fernando Zavala** |
+| **Parte 4** | 06:00 - 08:00 (2 min) | Demostración de Prueba Fallida y Corrección en CI | **Andres Suarez** |
+| **Parte 5** | 08:00 - 10:00 (2 min) | Despliegue Continuo (CD) Condicionado a Pruebas | **Dennisse Cavero** |
+| **Parte 6** | 10:00 - 13:00 (3 min) | Gestión de Variabilidad, Modelo de Características y Single Codebase | **Dennisse Cavero** |
+| **Parte 7** | 13:00 - 14:00 (1 min) | Conclusiones Técnicas y Cierre | **Fernando, Dennisse y Andres** |
 
 ---
 

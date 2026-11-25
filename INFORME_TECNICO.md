@@ -13,11 +13,9 @@
 * **Período Académico:** 2026 - 2027  
 * **Docente:** Ing. Docente Asignado  
 * **Integrantes del Grupo:**
-  1. Estudiante 1 (Líder / Integración Continua)
-  2. Estudiante 2 (Control de Versiones y Modelado)
-  3. Estudiante 3 (Lógica de Negocio y Pruebas Unitarias)
-  4. Estudiante 4 (Variabilidad y Feature Flags)
-  5. Estudiante 5 (Despliegue Continuo y Documentación)
+  1. **Fernando Zavala Cataña** (C.I. 0928732056 - fzavalac@unemi.edu.ec) - *Líder / Integración Continua (CI/CD)*
+  2. **Dennisse Cavero** (C.I. 0998122188 - acaverom@unemi.edu.ec) - *Gestión de la Variabilidad y Feature Flags*
+  3. **Andres Suarez** (C.I. 0999200110 - csuarezc9@unemi.edu.ec) - *Control de Versiones, Pruebas y Despliegue*
 
 * **Enlaces de Entrega:**
   * **Repositorio de GitHub:** `[INSERTAR_ENLACE_AQUÍ]`
@@ -68,11 +66,9 @@ Ambas variantes se ejecutan a partir del **mismo código fuente base**, activand
 
 | Integrante | Rol Asignado | Responsabilidades Específicas |
 | :--- | :--- | :--- |
-| **Estudiante 1** | Líder Técnico y Arquitecto CI/CD | Diseño general del flujo CI/CD en GitHub Actions, coordinación de integración en ramas `main` y `develop`, y orquestación del artefacto de entrega. |
-| **Estudiante 2** | Ingeniero de Control de Versiones | Configuración de la estrategia Gitflow, políticas de Pull Requests, resolución de conflictos y gestión de los releases semánticos `v1.0.0` y `v1.1.0`. |
-| **Estudiante 3** | Desarrollador de Lógica Comercial | Implementación del módulo de cálculo comercial (`salesCalculator.js`), gestión de impuestos e implementación de las pruebas unitarias automatizadas. |
-| **Estudiante 4** | Ingeniero de Variabilidad de Software | Diseño del Modelo de Características, configuración de Feature Flags (`variants.json`) y desarrollo del script de validación automatizada (`validate-config.js`). |
-| **Estudiante 5** | Especialista en Calidad y Despliegue | Configuración del pipeline de CD, simulación del fallo intencional de pruebas, verificación de artefactos en producción y elaboración de evidencias. |
+| **Fernando Zavala Cataña** | Líder Técnico y Arquitecto CI/CD | Diseño general del flujo CI/CD en GitHub Actions, coordinación de integración en ramas `main` y `develop`, y orquestación del artefacto de entrega. |
+| **Dennisse Cavero** | Ingeniera de Variabilidad y Lógica | Diseño del Modelo de Características, configuración de Feature Flags (`variants.json`), implementación del catálogo y validador de configuración (`validate-config.js`). |
+| **Andres Suarez** | Especialista en Control de Versiones, Calidad y CD | Configuración de estrategia Gitflow, implementación de la suite de pruebas unitarias (`Vitest`), simulación del fallo intencional y despliegue a GitHub Pages. |
 
 ---
 

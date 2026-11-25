@@ -8,9 +8,9 @@ export const initialProducts = [
 ];
 
 export const initialCustomers = [
-  { id: 1, docId: '0928374651', name: 'Juan Carlos Pérez', email: 'juan.perez@unemi.edu.ec', phone: '0991234567', city: 'Milagro' },
-  { id: 2, docId: '0912837465', name: 'María Fernanda Gómez', email: 'maria.gomez@gmail.com', phone: '0987654321', city: 'Guayaquil' },
-  { id: 3, docId: '1726354890', name: 'Carlos Andrés Zambrano', email: 'czambrano@empresa.com', phone: '0978901234', city: 'Quito' }
+  { id: 1, docId: '0928732056', name: 'Fernando Zavala Cataña', email: 'fzavalac@unemi.edu.ec', phone: '0988944198', city: 'Milagro' },
+  { id: 2, docId: '0998122188', name: 'Dennisse Cavero', email: 'acaverom@unemi.edu.ec', phone: '099 864 7249', city: 'Milagro' },
+  { id: 3, docId: '0999200110', name: 'Andres Suarez', email: 'csuarezc9@unemi.edu.ec', phone: '0962571644', city: 'Guayaquil' }
 ];
 
 export const initialDiscounts = [
@@ -24,7 +24,7 @@ export const initialSales = [
     id: 'VENTA-1001',
     date: '2026-11-20',
     customerId: 1,
-    customerName: 'Juan Carlos Pérez',
+    customerName: 'Fernando Zavala Cataña',
     items: [
       { productId: 1, name: 'Laptop Dell Inspiron 15', quantity: 1, price: 780.00 }
     ],
@@ -38,7 +38,7 @@ export const initialSales = [
     id: 'VENTA-1002',
     date: '2026-11-22',
     customerId: 2,
-    customerName: 'María Fernanda Gómez',
+    customerName: 'Dennisse Cavero',
     items: [
       { productId: 2, name: 'Monitor LG 24" IPS FHD', quantity: 2, price: 165.50 },
       { productId: 4, name: 'Mouse Inalámbrico Logitech M280', quantity: 1, price: 18.50 }
@@ -53,7 +53,7 @@ export const initialSales = [
     id: 'VENTA-1003',
     date: '2026-11-24',
     customerId: 3,
-    customerName: 'Carlos Andrés Zambrano',
+    customerName: 'Andres Suarez',
     items: [
       { productId: 3, name: 'Teclado Mecánico RGB Redragon', quantity: 2, price: 45.00 },
       { productId: 6, name: 'Auriculares HyperX Cloud II', quantity: 1, price: 89.90 }
