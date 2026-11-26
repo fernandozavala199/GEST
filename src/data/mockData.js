@@ -9,7 +9,7 @@ export const initialProducts = [
 
 export const initialCustomers = [
   { id: 1, docId: '0928732056', name: 'Fernando Zavala Cataña', email: 'fzavalac@unemi.edu.ec', phone: '0988944198', city: 'Milagro' },
-  { id: 2, docId: '0998122188', name: 'Dennisse Cavero', email: 'acaverom@unemi.edu.ec', phone: '099 864 7249', city: 'Milagro' },
+  { id: 2, docId: '0998122188', name: 'Dennisse Cavero', email: 'acaverom@unemi.edu.ec', phone: '0998647249', city: 'Milagro' },
   { id: 3, docId: '0999200110', name: 'Andres Suarez', email: 'csuarezc9@unemi.edu.ec', phone: '0962571644', city: 'Guayaquil' }
 ];
 
